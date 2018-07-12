@@ -1,6 +1,7 @@
 # Learn-neo4j
 安装(ubuntu)：
 
+0: add-apt-repository ppa:webupd8team/java
 1: apt install software-properties-common
 2: apt-get update
 3: apt-get install oracle-java8-installer
@@ -13,8 +14,14 @@
 
 8: 设置密码，默认用户neo4j,此处密码设置为123456
    neo4j-admin set-initial-password 123456
+
 9: 启动
+   mkdir /var/run/neo4j
    neo4j start
+
+10: 
+ http://localhost:7474/
+
 
 python driver：
 
@@ -22,9 +29,12 @@ python driver：
 安装: 
      pip install neo4j-driver
 
+example:
+    https://github.com/neo4j-examples/movies-python-bolt
+
 2: Py2neo 第三方模块，个人感觉相对好用
 安装:
-   pip install py2neo
+   pip install py2neo==2.0.9
 
 4: Neo4jRestClient
    source: https://github.com/versae/neo4j-rest-client
