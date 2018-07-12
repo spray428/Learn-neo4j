@@ -36,6 +36,9 @@ example:
 安装:
    pip install py2neo==2.0.9
 
+API文档：
+   https://py2neo.org/2.0/essentials.html
+
 4: Neo4jRestClient
    source: https://github.com/versae/neo4j-rest-client
    Example: https://github.com/neo4j-examples/movies-python-neo4jrestclient
